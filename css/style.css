@@ -1,0 +1,181 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'big_johnregular';
+    src: url('../fonts/bigjohn-webfont.otf') format('otf'),
+    url('../fonts/bigjohn-webfont.ttf') format('ttf'),
+    	url('../fonts/bigjohn-webfont.woff2') format('woff2'),
+    		
+         	url('../fonts/bigjohn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'slim_joeregular';
+    	src: url('../fonts/slimjoe-webfont.otf') format('otf'),
+    		url('../fonts/slimjoe-webfont.woff2') format('woff2'),
+         	url('../fonts/slimjoe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	
+	margin: 0 auto;
+	font: 400 1.6rem/1.5 "Lato", sans-serif;
+	min-height: 100%;
+}
+
+	
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.conteiner {
+
+	width: 
+	600px;
+	border: 2px solid #24170a;
+	margin: 0 auto;
+	/* position: absolute; */
+
+}
+.section {
+
+	padding: 7em 0;
+	
+	font-size: 0;
+/* 	outline: 1px solid green; */
+
+.
+
+}
+.desk {
+	position: relative;
+	width: 640px;
+	padding: 20px;
+	background: #ffffcb;
+	margin: 50px auto;
+	height: 640px;
+
+}
+
+.cell {
+
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+
+	width: 12.5%;
+	background: #24170a;
+	padding-top: 12.5%;
+}
+
+.line-odd .cell:nth-child(even) {
+
+	background:  #ffffcb;
+}
+.line-even .cell:nth-child(odd) {
+
+	background:  #ffffcb;
+}
+.checker {
+
+	position: absolute;
+	display: inline-block;
+	width: 80%;
+	background: #000;
+	background: radial-gradient(circle closest-side at center,
+		#464646, #000);
+	padding-top: 75%;
+	border-radius: 50%;
+	border: 2px solid #464646;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	margin: auto;
+
+}
+.checker--white {
+
+	border: 2px solid #b0b0a7;
+
+	background: #fff;
+	background: radial-gradient(circle closest-side at center,
+		#b0b0a7, #fff);
+
+
+
+}
+.checker:hover {
+	box-shadow: 5px 5px 30px rgba(255, 255, 255, .6);
+	transform: scale(1.1);
+
+
+}
+/*.section:nth-child(1) {
+
+	text-align: center;
+	padding: 14em 0 12em;
+
+*/
